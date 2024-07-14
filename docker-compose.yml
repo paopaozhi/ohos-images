@@ -1,0 +1,11 @@
+# ohos build
+
+services:
+  web:
+    build: .
+    volumes:
+      - ./tool:/root/tool:ro
+    command: /bin/bash
+
+volumes:
+  logvolume01: {}
